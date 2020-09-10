@@ -11,14 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d00a06e7-8529-4595-9280-3bb97473acb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/books/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/BookishRuby.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BookishRuby.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4654e41c-54a6-4ba7-8b7d-950ce0a35f6e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4654e41c-54a6-4ba7-8b7d-950ce0a35f6e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -28,9 +29,9 @@
       <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/copy.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/copy.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/copy_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/copy_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/copy_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/copy_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/books/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
@@ -268,7 +269,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599643712505</updated>
       <workItem from="1599643714877" duration="5910000" />
-      <workItem from="1599653203330" duration="20524000" />
+      <workItem from="1599653203330" duration="20908000" />
     </task>
     <servers />
   </component>

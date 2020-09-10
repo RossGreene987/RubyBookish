@@ -1,11 +1,16 @@
-<h1>My Books</h1>
-<ul>
-  <% @books.each { |book| %>
-    <li><%=  book.title  %></li>
-    <li><%= link_to "Edit information", {:action => 'edit', :id => book.id} %></li>
-    <br/>
-  <% } %>
-</ul>
+<% if @books.blank? %>
+  <p>There are no books in the library!</p>
+
+<% else %>
+  <h1>All Books</h1>
+  <ul>
+    <% @books.each { |book| %>
+      <li><%=  book.title  %>
+        (<%= link_to "View & edit", {:action => 'edit', :id => book.id} %>) </li>
+      <br/>
+    <% } %>
+  </ul>
+<%end %>
 
 <p><%= link_to "Add new Book", {:action => 'new' }%></p>
 
