@@ -1,8 +1,12 @@
 <h1>My Books</h1>
 <ul>
-  <% for book in @books %>
-    <li><%= book.title %></li>
-  <% end %>
+  <% @books.each { |book| %>
+    <li><%=  book.title  %></li>
+    <li><%= link_to "Edit information", {:action => 'edit', :id => book.id} %></li>
+    <br/>
+  <% } %>
 </ul>
 
 <p><%= link_to "Add new Book", {:action => 'new' }%></p>
+
+

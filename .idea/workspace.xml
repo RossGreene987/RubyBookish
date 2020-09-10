@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d00a06e7-8529-4595-9280-3bb97473acb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/books/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
@@ -29,7 +30,6 @@
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/copy_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/copy_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/books_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/books_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/copy_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/copy_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/new.html.erb" afterDir="false" />
@@ -40,7 +40,6 @@
       <change beforePath="$PROJECT_DIR$/bin/update" beforeDir="false" afterPath="$PROJECT_DIR$/bin/update" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/yarn" beforeDir="false" afterPath="$PROJECT_DIR$/bin/yarn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20200909122855_add_book_ref_to_copies.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200909122855_add_book_ref_to_copies.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/copy_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/copy_controller_test.rb" afterDir="false" />
     </list>
@@ -48,6 +47,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="ERB File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +72,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -260,7 +268,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599643712505</updated>
       <workItem from="1599643714877" duration="5910000" />
-      <workItem from="1599653203330" duration="17040000" />
+      <workItem from="1599653203330" duration="20524000" />
     </task>
     <servers />
   </component>
@@ -283,38 +291,38 @@
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
     <state x="-1399" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599648638128" />
-    <state width="1815" height="303" key="GridCell.Tab.0.bottom" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.0.bottom" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.0.center" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.0.center" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.0.left" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.0.left" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.0.right" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.0.right" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.1.bottom" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.1.bottom" timestamp="1599727344894">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.1.center" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344894" />
+    <state width="1815" height="203" key="GridCell.Tab.1.center" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.1.left" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.1.left" timestamp="1599727344893">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
-    <state width="1815" height="303" key="GridCell.Tab.1.right" timestamp="1599669759771">
+    <state width="1815" height="203" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344893" />
+    <state width="1815" height="203" key="GridCell.Tab.1.right" timestamp="1599727344894">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="303" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599669759771" />
+    <state width="1815" height="203" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1599727344894" />
     <state width="1815" height="238" key="GridCell.Tab.2.bottom" timestamp="1599665885933">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
