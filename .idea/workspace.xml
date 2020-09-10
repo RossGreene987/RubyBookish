@@ -29,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/copy.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/copy.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/copy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/copy_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/copy_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/copy_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/copy_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/edit.html.erb" afterDir="false" />
@@ -269,7 +270,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599643712505</updated>
       <workItem from="1599643714877" duration="5910000" />
-      <workItem from="1599653203330" duration="20908000" />
+      <workItem from="1599653203330" duration="22205000" />
     </task>
     <servers />
   </component>

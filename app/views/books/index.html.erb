@@ -6,7 +6,8 @@
   <ul>
     <% @books.each { |book| %>
       <li><%=  book.title  %>
-        (<%= link_to "View & edit", {:action => 'edit', :id => book.id} %>) </li>
+        (<%= link_to "View & edit", :action => 'edit', :id => book %>) </li>
+      <li><%= button_to "delete", book, :method => :delete %></li>
       <br/>
     <% } %>
   </ul>

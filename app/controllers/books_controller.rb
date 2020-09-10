@@ -33,7 +33,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
 
     if @book.update_attributes(book_param)
-      redirect_to action: 'index' #, id: @book
+      redirect_to action: 'index'
     else
       render action: 'edit'
     end
@@ -41,5 +41,12 @@ class BooksController < ApplicationController
 
   def book_param
     params.require(:book).permit(:title, :price, :subject_id, :description)
+  end
+
+  # I was expecting to call this 'delete' since that is what 'method' calls
+  # Why is it destroy instead? Is there any way I could have guessed that?
+  def destroy
+    Book.find(params[:id]).destroy
+    redirect_to action: 'index'
   end
 end
