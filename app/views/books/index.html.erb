@@ -1,9 +1,18 @@
+<% if @books.blank? %>
+  <p>There are no books in the library!</p>
 
-<h1>My Books</h1>
-<ul>
-  <% for book in @books %>
-    <li><%= book.title %></li>
-  <% end %>
-</ul>
+<% else %>
+  <h1>All Books</h1>
+  <ul>
+    <% @books.each { |book| %>
+      <li><%=  book.title  %>
+        (<%= link_to "View & edit", :action => 'edit', :id => book %>) </li>
+      <li><%= button_to "delete", book, :method => :delete %></li>
+      <br/>
+    <% } %>
+  </ul>
+<%end %>
 
 <p><%= link_to "Add new Book", {:action => 'new' }%></p>
+
+
