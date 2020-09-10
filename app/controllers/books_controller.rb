@@ -15,14 +15,13 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
 
     if @book.save
-      redirect_to :action => 'index'
+      redirect_to action: 'index'
     else
-      @subjects = Subject.all
-      render :action => 'new'
+      render action: 'new'
     end
   end
 
   def book_params
-    params.require(:books).permit(:title, :author, :isbn)
+    params.require(:book).permit(:title, :author, :isbn)
   end
 end
