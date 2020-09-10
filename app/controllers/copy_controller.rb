@@ -1,2 +1,0 @@
-class CopyController < ApplicationController
-end

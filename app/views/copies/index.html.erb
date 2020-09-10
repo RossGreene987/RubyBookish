@@ -1,0 +1,24 @@
+<% if @copies.blank? %>
+  <p>There are no copies of this book in the library</p>
+
+<% else %>
+  <h1>All Copies of <% @book.title %></h1>
+  <table>
+    <tr>
+      <th>Borrower</th>
+      <th>Return Date</th>
+    </tr>
+    <% @copies.each { |copy| %>
+      <tr>
+        <td><%= copy.Borrower %></td>
+        <td><%= copy.DueDate %></td>
+      </tr>
+    <% } %>
+  </table>
+<%end %>
+
+<p><%= link_to "Add new Copy", {:action => 'new', id: @book }%></p>
+
+<br/>
+
+<%= link_to 'Back', {:controller => :books, :action => 'index'} %>

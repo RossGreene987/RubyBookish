@@ -3,10 +3,6 @@ class BooksController < ApplicationController
     @books = Book.all
   end
 
-  def show
-    @book = Book.find(params[:id])
-  end
-
   def new
     @book = Book.new
   end
@@ -32,15 +28,11 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
 
-    if @book.update_attributes(book_param)
+    if @book.update_attributes(book_params)
       redirect_to action: 'index'
     else
       render action: 'edit'
     end
-  end
-
-  def book_param
-    params.require(:book).permit(:title, :price, :subject_id, :description)
   end
 
   # I was expecting to call this 'delete' since that is what 'method' calls
