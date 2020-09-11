@@ -1,0 +1,13 @@
+<%= form_with model: @book do |f| %>
+
+  <% %w[title author isbn].each do |input| %>
+    <p><%= f.label input %>:
+      <%= f.text_field input %></p>
+  <% end %>
+
+  <%= f.submit %>
+
+  <br/>
+
+  <%= link_to 'Return', @book.id ? book_path(@book) : books_path %>
+<% end -%>

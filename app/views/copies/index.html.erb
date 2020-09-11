@@ -1,0 +1,21 @@
+<% if @copies.blank? %>
+  <p>There are no copies of this book in the library</p>
+
+<% else %>
+  <h1>All Copies of <%= @book.title %></h1>
+
+  <% @copies.each { |copy| %>
+    <p>
+      Borrowed by <strong><%=copy.borrower %></strong>
+      with a return date of <strong><%=copy.due_date %></strong>
+      (<%= link_to 'edit', edit_copy_path(copy), :action => :edit %>)
+    </p>
+
+  <% } %>
+
+<%end %>
+
+<p><%= link_to "Add new Copy", :action => 'new' %></p>
+
+<br/>
+<%= link_to 'Back', book_path(@book) %>

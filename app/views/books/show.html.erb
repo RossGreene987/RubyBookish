@@ -1,0 +1,10 @@
+<h1><%= @book.title %> </h1>
+<p>By <%= @book.author %> </p>
+<p>ISBN: <%= @book.isbn %></p>
+
+<%= link_to "Edit", :action => 'edit' %><br/><br/>
+<%= button_to "delete", :method => :delete %>
+
+<p> <%= link_to "View Copies",  book_copies_path(@book) %> </p>
+
+<%= link_to 'Back to all books', books_path %>

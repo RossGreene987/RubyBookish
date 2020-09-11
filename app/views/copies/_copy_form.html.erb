@@ -1,0 +1,18 @@
+
+<%= form_with model: @copy do |f| %>
+
+  <p><%= f.label :borrower %>:
+    <%= f.text_field :borrower %></p>
+
+  <p>
+    <%= f.label :due_date %>:
+    <%= f.date_field :due_date %>
+  </p>
+
+  <%= f.submit %>
+
+  <br/><br/>
+
+  <%= link_to 'Back', book_copies_path(@copy.book_id || @book) %>
+
+<% end -%>
