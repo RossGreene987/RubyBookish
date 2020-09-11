@@ -1,22 +1,25 @@
 class CopiesController < ApplicationController
   before_action :find_book
 
-  def find_book; end
+  def find_book
+    if params[:book_id].blank?
+      @copy = Copy.find(params[:id])
+      @book = Book.find(@copy.book_id)
+    else
+      @book = Book.find(params[:book_id])
+    end
+  end
 
   def index
-    @book = Book.find(params[:book_id])
     @copies = @book.copies
   end
 
   def new
-    @book = Book.find(params[:book_id])
     @copy = @book.copies.new
   end
 
   def create
-    @book = Book.find(params[:book_id])
     @copy = @book.copies.new(copy_params)
-
     if @copy.save
       redirect_to action: 'index'
     else
@@ -29,16 +32,12 @@ class CopiesController < ApplicationController
     params.require(:copy).permit(:borrower, :due_date)
   end
 
-  def edit
-    @copy = Copy.find(params[:id])
-  end
+  def edit; end
 
   def update
 
-    @copy = Copy.find(params[:id])
-
     if @copy.update_attributes(copy_params)
-      redirect_to book_copies_path(@copy.book_id)
+      redirect_to book_copies_path(@book)
     else
       render action: 'edit'
     end
@@ -46,6 +45,6 @@ class CopiesController < ApplicationController
 
   def destroy
     Copy.find(params[:id]).destroy
-    redirect_to action: 'index'
+    redirect_to action: book_copies_path(@book)
   end
 end

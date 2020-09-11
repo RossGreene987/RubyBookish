@@ -1,4 +1,5 @@
-<%= form_with model: [@book, @copy] do |f| %>
+
+<%= form_with model: @copy do |f| %>
 
   <p><%= f.label :borrower %>:
     <%= f.text_field :borrower %></p>
