@@ -10,7 +10,8 @@
 
   <%= f.submit %>
 
-  <br/>
+  <br/><br/>
 
-  <%= link_to 'Return to all Books', :return_url %>
+  <%= link_to 'Back', book_copies_path(@copy.book_id || @book) %>
+
 <% end -%>

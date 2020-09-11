@@ -34,10 +34,11 @@ class CopiesController < ApplicationController
   end
 
   def update
+
     @copy = Copy.find(params[:id])
 
     if @copy.update_attributes(copy_params)
-      redirect_to action: 'index'
+      redirect_to book_copies_path(@copy.book_id)
     else
       render action: 'edit'
     end
@@ -47,5 +48,4 @@ class CopiesController < ApplicationController
     Copy.find(params[:id]).destroy
     redirect_to action: 'index'
   end
-  private
 end
