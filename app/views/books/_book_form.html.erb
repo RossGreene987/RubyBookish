@@ -6,7 +6,8 @@
   <% end %>
 
   <%= f.submit %>
+
   <br/>
 
-  <%= link_to 'Return to all Books', {:action => 'index'} %>
+  <%= link_to 'Return', @book.id ? book_path(@book) : books_path %>
 <% end -%>

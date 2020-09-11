@@ -1,16 +1,5 @@
-<h1>Add new Copy</h1>
-
-<%= form_with model: [@book, @copy] do |f| %>
-
-  <p><%= f.label :borrower %>:
-    <%= f.text_field :borrower %></p>
-
-  <p><%= f.label :due_date %>:
-    <%= f.date_field :due_date %></p>
-
-  <%= f.submit "Create" %>
-<% end -%>
+<%= render 'copy_form' %>
 
 <br/>
 
-<%= link_to 'Back', :action => :index %>
+<%= link_to 'Back', book_path(@book) %>

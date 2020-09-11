@@ -1,0 +1,16 @@
+<%= form_with model: [@book, @copy] do |f| %>
+
+  <p><%= f.label :borrower %>:
+    <%= f.text_field :borrower %></p>
+
+  <p>
+    <%= f.label :due_date %>:
+    <%= f.date_field :due_date %>
+  </p>
+
+  <%= f.submit %>
+
+  <br/>
+
+  <%= link_to 'Return to all Books', :return_url %>
+<% end -%>

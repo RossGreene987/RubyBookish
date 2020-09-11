@@ -5,8 +5,11 @@
   <h1>All Copies of <%= @book.title %></h1>
 
   <% @copies.each { |copy| %>
-    <p>Borrowed by <strong><%=copy.borrower %></strong> with a return date of
-      <strong><%=copy.due_date %></strong></p>
+    <p>
+      Borrowed by <strong><%=copy.borrower %></strong>
+      with a return date of <strong><%=copy.due_date %></strong>
+      (<%= link_to 'edit', edit_copy_path(copy), :action => :edit %>)
+    </p>
 
   <% } %>
 

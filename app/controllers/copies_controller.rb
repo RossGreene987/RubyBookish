@@ -1,4 +1,8 @@
 class CopiesController < ApplicationController
+  before_action :find_book
+
+  def find_book; end
+
   def index
     @book = Book.find(params[:book_id])
     @copies = @book.copies
@@ -43,4 +47,5 @@ class CopiesController < ApplicationController
     Copy.find(params[:id]).destroy
     redirect_to action: 'index'
   end
+  private
 end
