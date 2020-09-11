@@ -1,19 +1,17 @@
 class CopiesController < ApplicationController
   def index
-    @book = Book.find(params[:id])
-    @copies = Copy.find_by_book_id(@book.id)
+    @book = Book.find(params[:book_id])
+    @copies = @book.copies
   end
 
-  def show; end
-
   def new
-    @copy = Copy.new
-    # @book = Book.find(params[:id])
-    # @copies.instance_variable_set(:book, @book.id)
+    @book = Book.find(params[:book_id])
+    @copy = @book.copies.new
   end
 
   def create
-    @copy = Copy.new(copy_params)
+    @book = Book.find(params[:book_id])
+    @copy = @book.copies.new(copy_params)
 
     if @copy.save
       redirect_to action: 'index'
@@ -24,7 +22,7 @@ class CopiesController < ApplicationController
   end
 
   def copy_params
-    params.require(:copy).permit(:borrower, :due_date, :book)
+    params.require(:copy).permit(:borrower, :due_date)
   end
 
   def edit
@@ -41,10 +39,8 @@ class CopiesController < ApplicationController
     end
   end
 
-  # I was expecting to call this 'delete' since that is what 'method' calls
-  # Why is it destroy instead? Is there any way I could have guessed that?
   def destroy
-    Book.find(params[:id]).destroy
-    redirect_to action: 'list'
+    Copy.find(params[:id]).destroy
+    redirect_to action: 'index'
   end
 end

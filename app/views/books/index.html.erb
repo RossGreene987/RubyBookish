@@ -5,16 +5,12 @@
   <h1>All Books</h1>
   <ul>
     <% @books.each { |book| %>
-      <li><%=  book.title  %></li>
-      <%= button_to "delete", book, :method => :delete %>
-      <%= link_to "Edit", :action => 'edit', :id => book%>
-      <%= link_to "View Copies", {:controller => :copies, :action => 'index', :id => book} %>
-      <br/>
+      <li><%=  link_to book.title, book_path(book)  %></li>
       <br/>
     <% } %>
   </ul>
 <%end %>
 
-<p><%= link_to "Add new Book", {:action => 'new' }%></p>
+<p><%= link_to "Add new Book", :action => :new %></p>
 
 

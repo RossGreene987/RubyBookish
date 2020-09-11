@@ -7,6 +7,10 @@ class BooksController < ApplicationController
     @book = Book.new
   end
 
+  def show
+    @book = Book.find(params[:id])
+  end
+
   def create
     @book = Book.new(book_params)
 
@@ -35,10 +39,9 @@ class BooksController < ApplicationController
     end
   end
 
-  # I was expecting to call this 'delete' since that is what 'method' calls
-  # Why is it destroy instead? Is there any way I could have guessed that?
   def destroy
     Book.find(params[:id]).destroy
     redirect_to action: 'index'
   end
 end
+

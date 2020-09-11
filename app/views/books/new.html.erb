@@ -1,18 +1,2 @@
-<h1>Add new book</h1>
+<%= render 'book_form', :object => @book %>
 
-<%= form_with model: @book do |f| %>
-  <p><%= f.label :title %>:
-    <%= f.text_field :title %></p>
-
-  <p><%= f.label :author %>:
-    <%= f.text_field :author %></p>
-
-  <p><%= f.label :isbn %>:
-    <%= f.text_field :isbn %></p>
-
-  <%= f.submit "Create" %>
-<% end -%>
-
-<br/>
-
-<%= link_to 'Back', {:action => 'index'} %>

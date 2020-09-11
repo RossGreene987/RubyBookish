@@ -2,23 +2,17 @@
   <p>There are no copies of this book in the library</p>
 
 <% else %>
-  <h1>All Copies of <% @book.title %></h1>
-  <table>
-    <tr>
-      <th>Borrower</th>
-      <th>Return Date</th>
-    </tr>
-    <% @copies.each { |copy| %>
-      <tr>
-        <td><%= copy.Borrower %></td>
-        <td><%= copy.DueDate %></td>
-      </tr>
-    <% } %>
-  </table>
+  <h1>All Copies of <%= @book.title %></h1>
+
+  <% @copies.each { |copy| %>
+    <p>Borrowed by <strong><%=copy.borrower %></strong> with a return date of
+      <strong><%=copy.due_date %></strong></p>
+
+  <% } %>
+
 <%end %>
 
-<p><%= link_to "Add new Copy", {:action => 'new', id: @book }%></p>
+<p><%= link_to "Add new Copy", :action => 'new' %></p>
 
 <br/>
-
-<%= link_to 'Back', {:controller => :books, :action => 'index'} %>
+<%= link_to 'Back', book_path(@book) %>

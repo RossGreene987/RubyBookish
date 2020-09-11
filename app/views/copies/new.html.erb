@@ -1,6 +1,7 @@
 <h1>Add new Copy</h1>
 
-<%= form_with model: @copy do |f| %>
+<%= form_with model: [@book, @copy] do |f| %>
+
   <p><%= f.label :borrower %>:
     <%= f.text_field :borrower %></p>
 
@@ -12,4 +13,4 @@
 
 <br/>
 
-<%= link_to 'Back', {:action => :index} %>
+<%= link_to 'Back', :action => :index %>
